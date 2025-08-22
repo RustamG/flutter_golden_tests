@@ -11,7 +11,7 @@ void main() {
     expect(find.text('0'), findsOneWidget);
     expect(find.text('1'), findsNothing);
 
-    await tester.pumpAndSettle(const Duration(seconds: 10));
+    await tester.pumpAndSettle(const Duration(seconds: 5));
 
     await compareScreenshot(kGoldensFolder, 'failing_counter');
   });
